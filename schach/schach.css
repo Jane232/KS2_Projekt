@@ -1,0 +1,138 @@
+/* written by @Jane232*/
+/*Dunkel*/
+html {
+  --oddd_Background:#545c8f;
+  --even_Background:#9ac3db;
+  --schachHover: #b3c6f7;
+  --width: 750px;
+}
+/*Hell*/
+html[data-theme="hell"]{
+  --oddd_Background:#7a7269;
+  --even_Background:#c9c5b5;
+  --schachHover:#f0ebcf;
+}
+
+.oddd {
+    background: var(--oddd_Background);
+    padding: 0px;
+}
+.even {
+    background: var(--even_Background);
+    padding: 0px;
+}
+
+table#chess_board {
+    table-layout: fixed;
+    font-size: 55px;
+    font-family: Arial , sans-serif;
+    border-collapse: collapse;
+    width: var(--width);
+    height: 750px;
+    color: black;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 1);
+    border-color: black
+
+}
+table #chess_board td{
+  vertical-align: middle;
+  padding-bottom: 0;
+}
+.label {
+  font-size: 60px;
+  width: 0px;
+}
+.even:hover,.oddd:hover{
+  background-color: var(--schachHover);
+}
+.schach{
+  width: 800px;
+  height: 800px;
+
+  padding: 20px;
+  margin: 30px;
+
+  border-radius: 20px;
+
+  background-color: gray;
+}
+/*für verschiedene Größen des Fenstes*/
+@media screen and (max-width: 1200px){
+  html{
+    --width: 600px;
+  }
+  .schach{
+    width: 400px;
+    height: 400px;
+  }
+  table#chess_board {
+    width: 600px;
+    height: 600px;
+  }
+  table#chess_board {
+    font-size: 48px;
+  }
+  .label{
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 900px){
+  html{
+    --width: 500px;
+  }
+  .schach{
+    width: 500px;
+    height: 600px;
+  }
+  table#chess_board {
+    width: 500px;
+    height: 500px;
+  }
+  table#chess_board {
+    font-size: 40px;
+  }
+  .label{
+    font-size: 41px;
+  }
+}
+.schachÜbersicht{
+  margin-left: 2em;
+}
+.schachÜbersicht ul{
+  margin-left: 1.2em;
+}
+/*Chat ########################################################*/
+/*Breite Parameter werden überschrieben*/
+.chat{
+  width: var(--width);
+  margin: 3em auto;
+}
+#messagebox {
+  width: 100%;
+  margin: 10px 0;
+}
+
+#message {
+  height: 200px;
+}
+#h2Chat {
+  margin-left: 10%;
+}
+
+#messageForm #tArea{
+  width: 100%;
+  margin: 10px 0;
+}
+#messageForm textarea {
+  width: 100%;
+  padding: 14px 14px;
+}
+
+#messageForm button {
+  margin: 20px 0 0 auto;
+}
+#chatFeedback {
+  margin-right: 0%;
+  margin-top: 10px;
+}
