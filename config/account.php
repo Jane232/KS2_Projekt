@@ -1,7 +1,7 @@
 <?php
 // written by @Jane232
 
-// index.php?display=account
+// aufgerufen bei: index.php?display=account
 // Übersicht für User über Einstellungen
 $user = logedIn();
 ?>

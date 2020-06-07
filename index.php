@@ -18,13 +18,13 @@ $con = db();
 
   if (isset($_GET['display'])) {
       if ($_GET['display'] == 'register') {
-          require("config/register.php");
+          //require("config/register.php");
           $title = "Registrierung";
       } elseif ($_GET['display'] == 'login') {
           if (isset($_SESSION["user"])) {
               session_unset();
           }
-          require("config/login.php");
+          //require("config/login.php");
           $title = "Log-in-Seite";
       } elseif ($_GET['display'] == 'logout') {
           if (isset($_SESSION["user"])) {
@@ -49,9 +49,9 @@ $con = db();
   // je nach dem ob Login oder Registrierung ausgewählt wurde
   if (isset($_GET['display'])) {
       if ($_GET['display'] == 'register') {
-          require("config/register2.php");
+          require("config/register.php");
       } elseif ($_GET['display'] == 'login') {
-          require("config/login2.php");
+          require("config/login.php");
       } elseif ($_GET['display'] == 'logout') {
           $_GET['display'] = "";
           require("config/homepage.php");
@@ -63,6 +63,13 @@ $con = db();
   }
   ?>
 
+  <script>
+    if(window.innerHeight > window.innerWidth){
+      document.cookie = "screenmode = portrait; ; path=/";
+    }else{
+      document.cookie = "screenmode = landscape; ; path=/";
+    }
+  </script>
 </body>
 
 </html>

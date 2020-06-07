@@ -323,7 +323,7 @@ canvas {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -39vh);
   background: var(--login-rb-bg);
   text-align: center;
   border-radius: 24px;
@@ -416,6 +416,10 @@ canvas {
 }
 .input-box input[where="register"] {
   width: 250px;
+}
+#captcha img{
+  border-radius: 18px;
+  border: 2px solid var(--login-rb-input-border-req-inv);
 }
 @media screen and (max-width: 500px) {
   .input-box {
@@ -547,52 +551,9 @@ canvas {
   padding-left: 10%
 }
 
-.meme {
-  margin-top: 3em;
-  margin-left: 25%;
-  margin-bottom: 2em;
-}
-
 .ende {
   margin-top: 5em;
 }
-
-#Headline1 {
-  text-decoration: underline;
-  text-align: center;
-}
-
-#Herz {
-  margin-left: 15%;
-  margin-top: 3em;
-  margin-bottom: 2em;
-}
-
-/* ################################################################################################## */
-.Luna {
-  padding-top: 5em;
-  width: 80%;
-  margin-left: 10%;
-}
-
-#Lunapic1 {
-  width: 80%;
-  padding-bottom: 3em;
-  padding-top: 2em;
-}
-
-#Lunapic2 {
-  height: 60%;
-  width: 80% padding-bottom: 3em;
-  padding-top: 2em;
-}
-
-@media screen and (max-width: 1000px) {
-  #Lunapic2 {
-    width: 80%
-  }
-}
-
 /* ################################################################################################## */
 .tabl {
   text-align: center;
@@ -958,7 +919,8 @@ nav {
   }
 }
 @media (orientation: portrait) {
-  .homepageBoxes{
+  .homepageBoxes,
+  #projectsBoxes{
     justify-content: center;
     grid-template-columns: auto;
     float: none;
