@@ -1,7 +1,7 @@
 # KS2_Projekt
 Das ist der Soucecode für eine Webseite, welche als Abschlussprojekt der 12. Klasse gedacht ist.
 
-Der Link ist jpis.hopto.org/informatik (falls der Link tot ist, hat sich mein Router mal wieder selbstständig gemacht. Einfach mich anschrebeiben :) )
+Der Link ist jpis.hopto.org/Ks2_Projekt (falls der Link tot ist, hat sich mein Router mal wieder selbstständig gemacht. Einfach mich anschrebeiben :) )
 
 Bericht.odt beinhaltet unseren gemeinsamen Bericht, einzelne Passagen sind mit Namen gekennzeichnet
 
